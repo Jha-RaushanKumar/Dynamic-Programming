@@ -23,120 +23,148 @@ Constraints:
 */
 
 class Solution {
-    public int maxProfit(int[] prices, int fee) {
+    public int maxProfit(int k, int[] prices) {
         
         int n = prices.length;
+        //return maxProfitByRecursion(0, prices, 1, k);
         /*
-        int[][] dp = new int[n][2];
+        int[][][] dp = new int[n][2][k + 1];
         for(int i = 0; i < n; i++){
-            Arrays.fill(dp[i], -1);
+            for(int j = 0; j < 2; j++){
+                Arrays.fill(dp[i][j], -1);
+            }
         }
-        return maxProfitByMemoization(0, prices, 1, dp, fee);
+        return maxProfitByMemoization(0, prices, 1, k, dp);
         */
         /*
-        int[][] dp = new int[n + 1][2];
+        int[][][] dp = new int[n + 1][2][k + 1];
         for(int i = 0; i <= n; i++){
-            Arrays.fill(dp[i], 0);
+            for(int j = 0; j < 2; j++){
+                Arrays.fill(dp[i][j], 0);
+            }
         }
-        return maxProfitByTabulation(n, prices, dp, fee);
+        return maxProfitByTabulation(n, prices, dp, k);
         */
-        return maxProfitByTabulationOptimized(n, prices, fee);
+        return maxProfitByTabulationOptimized(n, prices, k);
     }
 
     /*  
         Method 01: Recursion
         TC: O(2^N) SC: O(N) [recursionStackSpace]
     */
-    public int maxProfitByRecursion(int i, int[] prices, int buyAllowed, int fee) {
+    public int maxProfitByRecursion(int i, int[] prices, int buyAllowed, int k) {
         
-        if(i == prices.length){
+        if(i == prices.length || k == 0){
             return 0;
         }
         if(buyAllowed == 1){
-            int buy = -prices[i] + maxProfitByRecursion(i + 1, prices, 0, fee);
-            int notBuy = maxProfitByRecursion(i + 1, prices, 1, fee);
+            int buy = -prices[i] + maxProfitByRecursion(i + 1, prices, 0, k);
+            int notBuy = maxProfitByRecursion(i + 1, prices, 1, k);
             return Math.max(buy, notBuy);
         }
         else{
-            int sell = prices[i] - fee + maxProfitByRecursion(i + 1, prices, 1, fee);
-            int notSell = maxProfitByRecursion(i + 1, prices, 0, fee);
+            int sell = prices[i] + maxProfitByRecursion(i + 1, prices, 1, k - 1);
+            int notSell = maxProfitByRecursion(i + 1, prices, 0, k);
             return Math.max(sell, notSell);
         }
     }
 
     /*  
         Method 02: Memoization
-        TC: O(N*2) SC: O(N*2) + O(N) [DP array + recursionStackSpace]
+        TC: O(N*2*k) SC: O(N*2*k) + O(N) [DP array + recursionStackSpace]
     */
-    public int maxProfitByMemoization(int i, int[] prices, int buyAllowed, int[][] dp, int fee) {
+    public int maxProfitByMemoization(int i, int[] prices, int buyAllowed, int k, int[][][] dp) {
         
-        if(i == prices.length){
+        if(i == prices.length || k == 0){
             return 0;
         }
-        if(dp[i][buyAllowed] != -1){
-            return dp[i][buyAllowed];
+        if(dp[i][buyAllowed][k] != -1){
+            return dp[i][buyAllowed][k];
         }
         if(buyAllowed == 1){
-            int buy = -prices[i] + maxProfitByMemoization(i + 1, prices, 0, dp, fee);
-            int notBuy = maxProfitByMemoization(i + 1, prices, 1, dp, fee);
-            dp[i][buyAllowed] = Math.max(buy, notBuy);
+            int buy = -prices[i] + maxProfitByMemoization(i + 1, prices, 0, k, dp);
+            int notBuy = maxProfitByMemoization(i + 1, prices, 1, k, dp);
+            return dp[i][buyAllowed][k] = Math.max(buy, notBuy);
         }
         else{
-            int sell = prices[i] - fee + maxProfitByMemoization(i + 1, prices, 1, dp, fee);
-            int notSell = maxProfitByMemoization(i + 1, prices, 0, dp, fee);
-            dp[i][buyAllowed] = Math.max(sell, notSell);
+            int sell = prices[i] + maxProfitByMemoization(i + 1, prices, 1, k - 1, dp);
+            int notSell = maxProfitByMemoization(i + 1, prices, 0, k, dp);
+            return dp[i][buyAllowed][k] = Math.max(sell, notSell);
         }
-        return dp[i][buyAllowed];
     }
 
     /*  
         Method 03: Tabulation
-        TC: O(N*2) SC: O(N*2) [DP array]
+        TC: O(N*2*k) SC: O(N*2*k) [DP array]
     */
-    public int maxProfitByTabulation(int n, int[] prices, int[][] dp, int fee) {
+    public int maxProfitByTabulation(int n, int[] prices, int[][][] dp, int trans) {
         
-        dp[n][0] = dp[n][1] = 0;
+        for(int j = 0; j < 2; j++){
+            for(int k = 0; k <= trans; k++){
+                dp[n][j][k] = 0;
+            }
+        }
+        for(int i = 0; i <= n; i++){
+            for(int j = 0; j < 2; j++){
+                dp[i][j][0] = 0;
+            }
+        }
+        
         for(int i = n - 1; i >= 0; i--){
-            for(int j = 1; j >= 0; j--){
-                if(j == 1){
-                    int buy = -prices[i] + dp[i + 1][0];
-                    int notBuy = dp[i + 1][1];
-                    dp[i][j] = Math.max(buy, notBuy);
-                }
-                else{
-                    int sell = prices[i] - fee + dp[i + 1][1];
-                    int notSell = dp[i + 1][0];
-                    dp[i][j] = Math.max(sell, notSell);
+            for(int j = 0; j < 2; j++){
+                for(int k = 1; k <= trans; k++){
+                    if(j == 1){
+                        int buy = -prices[i] + dp[i + 1][0][k];
+                        int notBuy = dp[i + 1][1][k];
+                        dp[i][j][k] = Math.max(buy, notBuy);
+                    }
+                    else{
+                        int sell = prices[i] + dp[i + 1][1][k - 1];
+                        int notSell = dp[i + 1][0][k];
+                        dp[i][j][k] = Math.max(sell, notSell);
+                    }
                 }
             }
         }
-        return dp[0][1];
+        return dp[0][1][trans];
     }
 
     /*  
         Method 04: Tabulation Optimized
-        TC: O(N*2) SC: O(N) [Just curr and front]
+        TC: O(N*2*k) SC: O(2*k) ~ O(k) [Just curr and front]
     */
-    public int maxProfitByTabulationOptimized(int n, int[] prices, int fee) {
+    public int maxProfitByTabulationOptimized(int n, int[] prices, int trans) {
         
-        int[] front = new int[2];
-        front[0] = front[1] = 0;
+        int[][] ahead= new int[2][trans + 1];
+        for(int j = 0; j < 2; j++){
+            for(int k = 0; k <= trans; k++){
+                ahead[j][k] = 0;
+            }
+        }
+        int[][] curr= new int[2][trans + 1];
+        for(int i = 0; i <= n; i++){
+            for(int j = 0; j < 2; j++){
+                curr[j][0] = 0;
+            }
+        }
+        
         for(int i = n - 1; i >= 0; i--){
-            int[] curr = new int[2];
-            for(int j = 1; j >= 0; j--){
-                if(j == 1){
-                    int buy = -prices[i] + front[0];
-                    int notBuy = front[1];
-                    curr[j] = Math.max(buy, notBuy);
-                }
-                else{
-                    int sell = prices[i] - fee + front[1];
-                    int notSell = front[0];
-                    curr[j] = Math.max(sell, notSell);
+            for(int j = 0; j < 2; j++){
+                for(int k = 1; k <= trans; k++){
+                    if(j == 1){
+                        int buy = -prices[i] + ahead[0][k];
+                        int notBuy = ahead[1][k];
+                        curr[j][k] = Math.max(buy, notBuy);
+                    }
+                    else{
+                        int sell = prices[i] + ahead[1][k - 1];
+                        int notSell = ahead[0][k];
+                        curr[j][k] = Math.max(sell, notSell);
+                    }
                 }
             }
-            front = curr;
+            ahead = curr;
         }
-        return front[1];
+        return ahead[1][trans];
     }
 }
