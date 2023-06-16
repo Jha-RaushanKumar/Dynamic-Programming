@@ -11,7 +11,7 @@ Solved by: `Raushan Kumar Jha`
 | Level | Problem                                                                                    | Solutions                                                  |
 |-------|--------------------------------------------------------------------------------------------|------------------------------------------------------------|
 | Medium     | [Unique Paths](https://leetcode.com/problems/unique-paths/)              | [Unique-Paths.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/2D-DP/Unique-Paths.java)                    |
-| Medium     | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)              | [Unique-Paths.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/2D-DP/Unique-Paths--II.java)    
+| Medium     | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)              | [Unique-Paths-II.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/2D-DP/Unique-Paths-II.java)    
 
 `DP on Stocks`
 | Level | Problem                                                                                    | Solutions                                                  |
