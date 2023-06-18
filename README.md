@@ -6,6 +6,8 @@ Solved by: `Raushan Kumar Jha`
 | Level | Problem                                                                                    | Solutions                                                  |
 |-------|--------------------------------------------------------------------------------------------|------------------------------------------------------------|
 | Easy     | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)              | [Climbing-Stars.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/1D-DP/Climbing-Stars.java)                    |
+| Medium     | [House Robber](https://leetcode.com/problems/house-robber/)              | [House-Robber.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/1D-DP/House-Robber.java)                    |
+| Medium     | [House Robber II](https://leetcode.com/problems/house-robber-ii/)              | [House-Robber-II.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/1D-DP/House-Robber-II.java)                    |
 
 `2-D DP`
 | Level | Problem                                                                                    | Solutions                                                  |
