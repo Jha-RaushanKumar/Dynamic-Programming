@@ -5,7 +5,8 @@ Solved by: `Raushan Kumar Jha`
 `1-D DP`
 | Level | Problem                                                                                    | Solutions                                                  |
 |-------|--------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| Easy     | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)              | [Climbing-Stars.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/1D-DP/Climbing-Stars.java)                    |
+| Easy     | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)              | [Climbing-Stars.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/1D-DP/Climbing-Stars.java)  
+| Medium     | [Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)              | [Min-Cost-Climbing-Stairs.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/1D-DP/Min-Cost-Climbing-Stairs.java)                    |                  |
 | Medium     | [House Robber](https://leetcode.com/problems/house-robber/)              | [House-Robber.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/1D-DP/House-Robber.java)                    |
 | Medium     | [House Robber II](https://leetcode.com/problems/house-robber-ii/)              | [House-Robber-II.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/1D-DP/House-Robber-II.java)                    |
 
