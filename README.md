@@ -12,6 +12,9 @@ Solved by: `Raushan Kumar Jha`
 |-------|--------------------------------------------------------------------------------------------|------------------------------------------------------------|
 | Medium     | [Unique Paths](https://leetcode.com/problems/unique-paths/)              | [Unique-Paths.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/2D-DP/Unique-Paths.java)                    |
 | Medium     | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/)              | [Unique-Paths-II.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/2D-DP/Unique-Paths-II.java)    
+| Medium     | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/)              | [Minimum-Path-Sum.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/2D-DP/Minimum-Path-Sum.java)                    |
+| Medium     | [Triangle](https://leetcode.com/problems/triangle/)              | [Unique-Paths-II.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/2D-DP/Traingle.java)    
+| Medium     | [Minimum Falling Path Sum](https://leetcode.com/problems/triangle/)              | [Minimum-Falling-Path-Sum.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/2D-DP/Minimum-Falling-Path-Sum.java)    
 
 `DP on Stocks`
 | Level | Problem                                                                                    | Solutions                                                  |
