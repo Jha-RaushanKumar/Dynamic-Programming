@@ -19,6 +19,11 @@ Solved by: `Raushan Kumar Jha`
 | Medium     | [Triangle](https://leetcode.com/problems/triangle/)              | [Triangle.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/2D-DP/Triangle.java)    
 | Medium     | [Minimum Falling Path Sum](https://leetcode.com/problems/minimum-falling-path-sum/)              | [Minimum-Falling-Path-Sum.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/2D-DP/Minimum-Falling-Path-Sum.java)    
 
+`DP on Strings`
+| Level | Problem                                                                                    | Solutions                                                  |
+|-------|--------------------------------------------------------------------------------------------|------------------------------------------------------------|
+| Medium     | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)              | [Longest-Common-Subsequence.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Strings/Longest-Common-Subsequence.java)  
+
 `DP on Stocks`
 | Level | Problem                                                                                    | Solutions                                                  |
 |-------|--------------------------------------------------------------------------------------------|------------------------------------------------------------|
