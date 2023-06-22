@@ -27,6 +27,8 @@ Solved by: `Raushan Kumar Jha`
 | Medium     | [Delete Operation for Two Strings](https://leetcode.com/problems/delete-operation-for-two-strings/)              | [Delete-Operation-for-Two-Strings.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Strings/Delete-Operation-for-Two-Strings.java)  
 | Hard     | [Minimum Insertion Steps to Make a String Palindrome](https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/)              | [Minimum-Insertion-Steps-to-Make-a-String-Palindrome.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Strings/Minimum-Insertion-Steps-to-Make-a-String-Palindrome.java)  
 | Medium     | [Longest Common Substring](https://practice.geeksforgeeks.org/problems/longest-common-substring1452/1)              | [Longest-Common-Substring.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Strings/Longest-Common-Substring.java)  
+| Hard     | [Shortest Common Supersequence](https://leetcode.com/problems/shortest-common-supersequence/)              | [Shortest-Common-Supersequence.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Strings/Shortest-Common-Supersequence.java)  
+| Hard     | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/)              | [Distinct-Subsequences.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Strings/Distinct Subsequences.java)  
 
 `DP on Stocks`
 | Level | Problem                                                                                    | Solutions                                                  |
