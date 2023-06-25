@@ -41,3 +41,10 @@ Solved by: `Raushan Kumar Jha`
 | Medium     | [Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee)              | [Best-Time-to-Buy-and-Sell-Stock-with-Transaction-Fee.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Stocks/Best-Time-to-Buy-and-Sell-Stock-with-Transaction-Fee.java)  
 | Hard     | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/)              | [Best-Time-to-Buy-and-Sell-Stock-III.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Stocks/Best-Time-to-Buy-and-Sell-Stock-III.java)  
 | Hard     | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/)              | [Best-Time-to-Buy-and-Sell-Stock-IV.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Stocks/Best-Time-to-Buy-and-Sell-Stock-IV.java)  
+
+`DP on Subsequences`
+| Level | Problem                                                                                    | Solutions                                                  |
+|-------|--------------------------------------------------------------------------------------------|------------------------------------------------------------|
+| Medium     | [Subset Sum Problem](https://practice.geeksforgeeks.org/problems/subset-sum-problem-1611555638/1)              | [Subset-Sum-Problem.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Subsequences/Subset-Sum-Problem.java)  
+| Medium     | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)              | [Subset-Sum-Problem.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Subsequences/Partition-Equal-Subset-Sum.java)  
+| Medium     | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)              | [Subset-Sum-Problem.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Subsequences/Subset-Sum-Problem.java)  
