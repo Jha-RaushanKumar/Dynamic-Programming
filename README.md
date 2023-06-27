@@ -53,3 +53,5 @@ Solved by: `Raushan Kumar Jha`
 | Medium     | [Coin Change](https://leetcode.com/problems/coin-change/)              | [Coin-Change.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Subsequences/Coin-Change.java)  
 | Medium     | [Target Sum](https://leetcode.com/problems/target-sum/)              | [Target-Sum.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Subsequences/Target-Sum.java)  
 | Medium     | [Coin Change II](https://leetcode.com/problems/coin-change-ii/)              | [Coin-Change-II.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Subsequences/Coin-Change-II.java)  
+| Medium     | [0 - 1 Knapsack Problem](https://practice.geeksforgeeks.org/problems/0-1-knapsack-problem0945/1)              | [0-1-Knapsack=Problem.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Subsequences/0-1-Knapsack=Problem.java)  
+| Medium     | [Rod Cutting](https://practice.geeksforgeeks.org/problems/rod-cutting0840/1)              | [Rod-Cutting.java](https://github.com/Jha-RaushanKumar/Dynamic-Programming/blob/main/DP-on-Subsequences/Rod-Cutting.java)  
